@@ -1,0 +1,121 @@
+.popular__projects {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 180px;
+  padding-bottom: 120px;
+  /* margin-top: 80px; */
+  background-color: white;
+}
+
+.popular__projects>p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.popular__projects>.projects {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.projects>h3 {
+  font-size: 30px;
+}
+
+.projects>p {
+  font-size: 16px;
+}
+
+.projects .projects__outlines {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.projects .see__more {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.see__more a {
+  width: 100%;
+  font-size: 14px;
+  color: black;
+  padding: 14px 25px;
+  background-color: dodgerblue;
+  border-radius: 3px;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .popular__projects {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    background-color: white;
+  }
+
+  .popular__projects>p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .popular__projects>.projects {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .projects>h3 {
+    font-size: 24px;
+  }
+
+  .projects>p {
+    font-size: 14px;
+    text-align: center;
+    width: 300px;
+    line-height: 1.5;
+  }
+
+  .projects .projects__outlines {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .projects .see__more {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .see__more a {
+    width: 100%;
+    font-size: 14px;
+    color: black;
+    padding: 14px 25px;
+    background-color: dodgerblue;
+    border-radius: 3px;
+    color: white;
+  }
+}

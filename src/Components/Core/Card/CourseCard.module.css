@@ -1,0 +1,117 @@
+.card {
+  width: 100%;
+  max-width: 270px;
+  /* border: 1px solid gray; */
+  transition: transform 0.25s linear;
+  border-radius: 7px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  line-height: 1.4;
+  gap: 15px;
+  flex-direction: column;
+  overflow: hidden;
+  background: white;
+  color:rgba(0, 0, 0, 0.815);
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  /* box-shadow: 1px 1px 2px 5px rgba(0, 0, 0, 0.05); */
+  box-shadow: 0px 0px 5px 1px #d7d8dd70;
+  background-color: #fff;
+}
+
+.card .img__container {
+  width: 100%;
+  height: 170px;
+  background-color: rgba(197, 197, 197, 0.781);
+  position: relative;
+}
+
+.img__container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img__container .level {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background-color: rgba(30, 143, 255, 0.425);
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+
+.img__container .level p {
+  font-size: 13px;
+  color: white;
+  text-transform: capitalize;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 7px;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.details > small {
+  text-align: center;
+  padding: 4px 15px;
+  /* background-color: rgba(209, 151, 250, 0.705); */
+  border-radius: 3px;
+  font-size: 11px;
+  /* color: rgba(115, 10, 190, 0.925); */
+  color: white;
+  font-weight: 600;
+}
+
+.details > h3 {
+  font-size: 16px;
+}
+
+.details > p {
+  font-size: 14px;
+  height: 70px;
+}
+
+/* .details .stack {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 13px;
+  width: 100%;
+  gap: 10px;
+} */
+
+.details .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  width: 100%;
+}
+
+.info a {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.815);
+}
+
+.info p {
+  font-size: 13px;
+  text-transform: capitalize;
+  padding: 4.5px 12px;
+  border-radius: 3px;
+  transition: all 0.2s linear;
+}
+
+.card:hover .info > p {
+  background-color: rgba(214, 214, 214, 0.418);
+}

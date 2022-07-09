@@ -1,0 +1,204 @@
+.projects__page {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 70px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  /* background-color: whitesmoke; */
+}
+
+.projects__page>p {
+  font-size: 16px;
+}
+
+.projects__page>.project__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project__container>h3 {
+  font-size: 30px;
+  color: #242B42;
+}
+
+.project__container>p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #242B42;
+}
+
+.project__container>.select__projects {
+  width: 100%;
+  /* border: 1px solid #242B42; */
+  width: 980px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 7px 15px;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.select__projects>.button__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.select__projects>.search__projects {
+  flex: 1;
+  max-width: 350px;
+}
+
+.search__projects>form {
+  width: 100%;
+}
+
+.search__projects>form>input {
+  width: 100%;
+  padding: 7px 15px;
+  border: 1px solid #a6a8b1cb;
+  outline: 0;
+  border-radius: 25px;
+  color: #242B42;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.356);
+}
+
+.search__projects>form>input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.project__container>.project__outlines {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 25px;
+  /* row-gap: 30px; */
+  margin: 50px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .projects__page {
+    width: 100%;
+    padding: 70px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: whitesmoke; */
+  }
+
+  .projects__page>p {
+    font-size: 14px;
+  }
+
+  .projects__page>.project__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project__container>h3 {
+    font-size: 24px;
+    color: #242B42;
+  }
+
+  .project__container>p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #242B42;
+  }
+
+  .project__container>.select__projects {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 100px; */
+    padding: 7px 10px;
+    background-color: #fff;
+    border-radius: 25px;
+  }
+
+  .select__projects>.button__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .button__controls>button {
+    border: 0;
+    outline: 0;
+    padding: 7px 10px;
+    background: transparent;
+    border-radius: 25px;
+    color: #242B42;
+    font-size: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+
+  .button__controls>button.active__button {
+    background-color: rgba(69, 159, 250, 0.836);
+    box-shadow: 0px 0px 5px 1px #d7d8dd70;
+    color: white;
+  }
+
+  .button__controls>button:hover {
+    background-color: rgba(69, 159, 250, 0.836);
+    color: white;
+  }
+
+  .select__projects>.search__projects {
+    /* flex: 1; */
+    display: none;
+    max-width: 400px;
+  }
+
+  .search__projects>form {
+    width: 100%;
+  }
+
+  .search__projects>form>input {
+    width: 100%;
+    padding: 7px 15px;
+    border: 1px solid #a6a8b1cb;
+    outline: 0;
+    border-radius: 25px;
+    color: #242B42;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.356);
+  }
+
+  .search__projects>form>input::-webkit-search-cancel-button {
+    display: none;
+  }
+
+  .project__container>.project__outlines {
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    place-content: center;
+    /* row-gap: 30px; */
+    margin: 30px 0;
+    width: 100%;
+  }
+}

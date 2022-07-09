@@ -1,0 +1,115 @@
+.showcase__form {
+  width: 100%;
+  max-width: 430px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.showcase__form>h3 {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 22px;
+}
+
+.showcase__form > .img__upload_container {
+  background-color: rgba(235, 235, 235, 0.603);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 15px 15px;
+  margin-bottom: 20px;
+  gap: 30px;
+  border-radius: 5px;
+}
+
+.img__upload_container > .preview__img_container {
+  border: 1px dashed rgb(6, 115, 224);
+  width: 180px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.preview__img_container > .preview__img {
+  width: 100%;
+  height: 100%;
+}
+
+.img__upload_container > .upload__img_button {
+  width: 170px;
+  padding: 10px 25px;
+  font-size: 16px;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.showcase__form > .controls {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.controls > .form__control {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form__control > label {
+  font-size: 14px;
+}
+
+.form__control>input {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 9px 10px;
+  outline: 0;
+  border-radius: 3px;
+}
+
+.showcase__form > .postShowcase__button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px 0; */
+}
+
+.postShowcase__button > button {
+  padding: 12px 25px;
+  width: 100%;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: all 0.25 linear;
+  font-size: 16px;
+}
+
+.postShowcase__button>button:hover {
+  background-color: rgb(6, 115, 224);
+}
+
+.postShowcase__button>button:active {
+  background-color: rgb(6, 115, 224);
+}
