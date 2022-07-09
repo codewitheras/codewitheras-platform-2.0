@@ -66,7 +66,7 @@
 .nav__links .nav__link {
   font-size: 15px;
   color: gray;
-  font-weight: 500;
+  font-weight: 400;
   transform: translateX(-0.75em);
   transition: transform 200ms;
 }

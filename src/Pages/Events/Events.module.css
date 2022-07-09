@@ -1,0 +1,106 @@
+.eventspages {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 70px 50px;
+}
+
+.eventspages>.events__map_container {
+  width: 100%;
+  height: 500px;
+  max-width: 820px;
+  width: 100%;
+  border: 1px solid rgba(121, 128, 121, 0.521);
+  margin-bottom: 70px;
+  background-color: #eee;
+  border-radius: 10px;
+  margin-top: -250px;
+}
+
+.events__map_container>.map {
+  height: 100%;
+  width: 100%;
+}
+
+.eventspages>.events__outline {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  padding: 70px 50px;
+}
+
+.events__outline>.events__outline_title {
+  width: 100%;
+}
+
+.events__outline_title>h3 {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.events__outline>.event__lists {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+.event__lists>.event {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.event>.event__headers {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 250px;
+  padding: 12px 0px;
+  border-bottom: 1px solid black;
+}
+
+.event__headers>h3 {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.event__headers>h3.event__header_Location {
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.event__headers>h3.event__header_name {
+  padding-left: -80px;
+}
+
+.event > .event__details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 0px;
+  gap: 180px;
+  border-bottom: 1px solid rgba(189, 189, 189, 0.342);
+  padding-bottom: 10px;
+}
