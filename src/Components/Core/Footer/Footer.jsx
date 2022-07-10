@@ -90,7 +90,7 @@ const Footer = () => {
         <div className={styles.footer__about_links}>
           <h4>About Us</h4>
           <div className={styles.footer__links}>
-            <Link to='/about'>About Us</Link>
+            {/* <Link to='/about'>About Us</Link> */}
             <Link to='/privacy'>Terms and Conditions</Link>
             <Link to='/privacy'>Privacy Policies</Link>
             <Link to='/faq'>FAQ</Link>

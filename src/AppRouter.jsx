@@ -19,6 +19,7 @@ import ProjectVideo from "./Pages/ProjectVideo/ProjectVideo";
 import Showcase from "./Pages/Showcase/Showcase";
 import RequestTemplate from "./Pages/Request/RequestTemplate";
 import TemplateDetails from "./Pages/TemplateDetails/TemplateDetails";
+import ProtectedPage from "./Components/ProtectedPage/ProtectedPage";
 
 const AppRouter = () => {
   return (
@@ -31,15 +32,15 @@ const AppRouter = () => {
           <Route path='/contact' component={Contactpage} />
           <Route path='/events' component={Eventspage} />
           <Route path='/projects' component={Projectspage} />
-          <Route path='/project/video/:id' component={ProjectVideo} />
+          <ProtectedPage path='/project/video/:id' component={ProjectVideo} />
           <Route path='/templates' component={Templatespage} />
           {/* <Route path='/pricing' component={Pricingpage} /> */}
           <Route path='/donation' component={Donationpage} />
           {/* <Route path='/challenge' component={Challengepage} /> */}
           <Route path='/mentorship' component={Mentorpage} />
-          <Route path='/showcase' component={Showcase} />
-          <Route path='/request-template' component={RequestTemplate} />
-          <Route path='/signup' component={Signuppage} />
+          <ProtectedPage path='/showcase' component={Showcase} />
+          <ProtectedPage path='/request-template' component={RequestTemplate} />
+          <Route path='/register' component={Signuppage} />
           <Route path='/template/:id' component={TemplateDetails} />
           <Route path='/signin' component={Signinpage} />
         </Switch>

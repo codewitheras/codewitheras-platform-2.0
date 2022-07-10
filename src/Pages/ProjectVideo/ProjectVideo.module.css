@@ -1,0 +1,128 @@
+.project__details {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 55px;
+}
+
+.project__details>.project__title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project__title>.views {
+  padding: 7px 15px;
+  background-color: rgba(194, 194, 194, 0.788);
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.project__details>.intro {
+  margin-top: 8px;
+  max-width: 80%;
+  margin-bottom: 30px;
+}
+
+.intro>p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.project__details>.about__txt,
+.project__details>.resources,
+.project__details>.dependencies,
+.project__details>.conclusion {
+  width: 100%;
+  max-width: 80%;
+  margin-bottom: 30px;
+}
+
+.about__txt>h3,
+.resources>h3,
+.dependencies>h3,
+.conclusion>h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.about__txt>p,
+.resources>p,
+.dependencies>p,
+.conclusion>p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.resources>ul {
+  /* list-style-type: none; */
+  display: flex;
+  margin-top: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-direction: column;
+  padding: 20px;
+  /* color: dodgerblue; */
+}
+
+.resources>ul>li>a {
+  color: rgb(27, 27, 27);
+  font-weight: 500;
+  color: dodgerblue;
+}
+
+.resources>ul>li>a:hover {
+  text-decoration: underline;
+}
+
+.dependencies {
+  width: 100%;
+}
+
+.dependencies>.dependencies__lists {
+  width: 100%;
+  max-width: 70%;
+  background-color: rgba(255, 255, 255, 0.781);
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 -20px 130px -5px rgba(0, 0, 0, 0.068),
+    0 -10px 10px -5px rgba(31, 31, 31, 0.04);
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+}
+
+.dependencies__lists>ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: none;
+  width: 50%;
+}
+
+.dependencies__lists>ul>p {
+  font-size: 17px;
+  font-weight: 550;
+  color: rgb(105, 105, 105);
+}
+
+.dependencies__lists>ul>li {
+  font-size: 14px;
+}
+
+.back__to_projects {
+  padding: 40px 55px;
+}
+
+.back__to_projects>p {
+  font-weight: 500;
+}
+
+.back__to_projects>p>a:hover {
+  text-decoration: underline;
+}

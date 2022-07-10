@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import styles from './About.module.css'
 import Banner from './../../Components/Core/Banner/Banner';
 import About from './../../Components/About/About';
@@ -9,7 +9,12 @@ const Aboutpage = () => {
   const [fullname, setFullName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  // eslint-disable-next-line no-unused-vars
   const [isFormFilled, setIsFormFilled] = useState(false)
+
+  // 
+
+  const formRef = useRef()
 
   useEffect(() => {
     if (!fullname || !email || !message) {
@@ -18,8 +23,9 @@ const Aboutpage = () => {
       setIsFormFilled(true);
     }
 
-    window.scrollTo(0, 0);
-  }, [fullname, email, message])
+    // window.scrollTo(0, 0);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
   
 
   const handleMessage = (e) => {
@@ -27,14 +33,12 @@ const Aboutpage = () => {
     // Todo: Handle sending message logic here...
 
     // * Main logic: Send message to the admin through their telegram channel...
-    console.log(fullname);
-    console.log(email);
-    console.log(message);
+    // console.log(fullname);
+    // console.log(email);
+    // console.log(message);
 
     // *: Reset all the form fields to their default value 'empty'
-    setFullName('')
-    setEmail('')
-    setMessage('')
+    formRef.current.reset();
   }
 
 
@@ -56,6 +60,7 @@ const Aboutpage = () => {
           <form
             autoCapitalize='on'
             autoComplete='on'
+            ref={formRef}
             onSubmit={handleMessage}>
             <div className={styles.form__group}>
               <label htmlFor='name'>Full name</label>
@@ -90,7 +95,11 @@ const Aboutpage = () => {
               />
             </div>
             <div className={styles.submit}>
-              <button type='submit' disabled={!isFormFilled}>Send Message</button>
+              <button
+                type='submit'
+                onClick={handleMessage}>
+                Send Message
+              </button>
             </div>
           </form>
         </div>

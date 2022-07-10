@@ -22,12 +22,11 @@ const ShowcaseForm = () => {
           type='file'
           accept='image/*'
           required
-          id='Input'
+          id='input'
+          name='input'
           hidden
         />
-        <button
-          type='button'
-          className={styles.upload__img_button}>
+        <button type='button' className={styles.upload__img_button}>
           Upload image
         </button>
       </div>
