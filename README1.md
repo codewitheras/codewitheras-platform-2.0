@@ -14,11 +14,11 @@
     <br />
     <br />
     <br />
-    <a href="https://courselabs.netlify.app">View Demo</a>
+    <a href="https://papareact.netlify.app">View Demo</a>
     ·
-    <a href="https://github.com/codewitheras/courseLab/issues">Report Bug</a>
+    <a href="https://github.com/codewitheras/papareact/issues">Report Bug</a>
     ·
-    <a href="https://github.com/codewitheras/courseLab/issues">Request Feature</a>
+    <a href="https://github.com/codewitheras/papareact/issues">Request Feature</a>
   </p>
 </div>
 
@@ -51,7 +51,8 @@
 ## About The Project
 
 ### Demo Video
-<video src='./src/assets/CourseLab _Demo1.mp4' muted controls loop width='700px' height='320px' maxwidth='800px'></video>
+<!-- <video src='./src/assets/CourseLab _Demo1.mp4' muted controls loop width='700px' height='320px' maxwidth='800px'></video> -->
+<img src='/src/assets/Screenshot (70).png' alt='' />
 
 There are so many online e-learning web platforms out there that just focuses on just the tech aspect of coding, we CourseLabs focus on making learning how to code much fun, easier and cheaper for all. We teach our students how to code, find jobs and negotiate with clients in the real world. Why you should learn with us?
 
