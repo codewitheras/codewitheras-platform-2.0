@@ -84,7 +84,7 @@ const Footer = () => {
               rel='noopener noreferrer'>
               Report an issue
             </a>
-            <Link to='/donate'>Donate</Link>
+            <Link to='/donation'>Donate</Link>
           </div>
         </div>
         <div className={styles.footer__about_links}>

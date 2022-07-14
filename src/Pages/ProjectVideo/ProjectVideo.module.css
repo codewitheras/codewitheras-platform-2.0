@@ -123,6 +123,10 @@
   font-weight: 500;
 }
 
+.back__to_projects>p>a {
+  color: dodgerblue;
+}
 .back__to_projects>p>a:hover {
+  color: dodgerblue;
   text-decoration: underline;
 }

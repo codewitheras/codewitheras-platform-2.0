@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import styles from "./Signup.module.css";
+import { useAuth } from "./../../ContextAPI/AuthContext";
 
 const Signuppage = () => {
   const [ischecked, setIschecked] = useState(false);
@@ -11,6 +12,16 @@ const Signuppage = () => {
   const passwordRef = useRef();
   const confirmPasswordRef = useRef();
   const formRef = useRef();
+
+  const history = useHistory();
+
+  const { currentUser } = useAuth();
+
+  const user = currentUser;
+
+  if (user) {
+    history.replace("/");
+  }
 
   const handleSignup = e => {
     e.preventDefault();
@@ -33,6 +44,7 @@ const Signuppage = () => {
     } else {
       alert("Registered");
       formRef.current.reset();
+      history.replace("/");
     }
   };
   return (

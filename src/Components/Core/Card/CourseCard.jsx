@@ -42,7 +42,7 @@ const CourseCard = props => {
         <p>{description}</p>
         {/* <div className={styles.stack}>{stack}</div> */}
         <div className={styles.info}>
-          <a href='/'>{tutor}</a>
+          <p>{tutor}</p>
           <p>{price}</p>
         </div>
       </div>

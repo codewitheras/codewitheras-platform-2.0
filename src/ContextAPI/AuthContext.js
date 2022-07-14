@@ -11,7 +11,7 @@ import {
 } from "firebase/auth";
 
 const AuthContext = createContext({
-  currentUser: 'Eras',
+  currentUser: null,
   register: () => Promise,
   login: () => Promise,
   loginWithGoogle: () => Promise,

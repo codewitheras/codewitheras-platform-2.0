@@ -1,0 +1,82 @@
+.donation {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 70px 200px 70px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.donation>form {
+  width: 400px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -5px rgba(0 0 0 / .100), 0 10px 10px -5px rgba(0 0 0 / .04);
+  border-radius: 7px;
+}
+
+form>.form__hd {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form__hd>h3 {
+  font-size: 26px;
+}
+
+form>.form__container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.form__container>.form__group {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form__group>label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.form__group>input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid rgb(182, 182, 182);
+  outline-color: dodgerblue;
+  border-radius: 5px;
+}
+
+form>.send {
+  width: 100%;
+  /* margin-bottom: 20px; */
+}
+
+.send>button {
+  width: 100%;
+  border: 0;
+  outline: dodgerblue;
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+
+.send>button:hover {
+  background-color: rgb(10, 111, 212);
+}
