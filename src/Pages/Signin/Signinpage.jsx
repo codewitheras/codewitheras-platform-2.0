@@ -1,11 +1,13 @@
 import React, { useRef } from "react";
 import styles from '../Signup/Signup.module.css'
 import { Link } from 'react-router-dom';
+import { useAuth } from "../../ContextAPI/AuthContext";
 
 const Signinpage = () => {
-
   const emailRef = useRef();
   const passwordRef = useRef();
+
+  const {login} = useAuth()
 
 
   const handleSignin = (e) => {
@@ -14,7 +16,9 @@ const Signinpage = () => {
     const email = emailRef.current.value
     const password = passwordRef.current.value
 
-    console.log(email, password)
+    // console.log(email, password)
+
+    login(email, password)
   }
   return (
     <>
