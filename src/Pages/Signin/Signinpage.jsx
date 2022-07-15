@@ -3,8 +3,16 @@ import styles from '../Signup/Signup.module.css'
 import { Link } from 'react-router-dom';
 
 const Signinpage = () => {
+
+  const emailRef = useRef();
+  const passwordRef = useRef();
+
+
   const handleSignin = (e) => {
     e.preventDefault();
+
+    const email = emailRef.current.value
+    const password = passwordRef.current.value
   }
   return (
     <>
