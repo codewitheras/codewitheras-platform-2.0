@@ -1,9 +1,15 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styles from "./Events.module.css";
 import Banner from "./../../Components/Core/Banner/Banner";
 import Footer from './../../Components/Core/Footer/Footer';
 
 const Eventspage = () => {
+
+  // Scroll to the top of the page on page load
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <Banner
