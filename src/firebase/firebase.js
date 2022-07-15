@@ -32,8 +32,6 @@ sendSignInLinkToEmail(auth, email, actionCodeSettings)
   });
 
 
-  import { getAuth, isSignInWithEmailLink, signInWithEmailLink } from "firebase/auth";
-
 // Confirm the link is a sign-in with email link.
 const auth = getAuth();
 if (isSignInWithEmailLink(auth, window.location.href)) {
@@ -95,8 +93,6 @@ sendSignInLinkToEmail(auth, email, actionCodeSettings)
 
 
 /*
-
-import { getAuth, isSignInWithEmailLink, signInWithEmailLink } from "firebase/auth";
 
 // Confirm the link is a sign-in with email link.
 const auth = getAuth();
