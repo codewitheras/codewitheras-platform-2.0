@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app'
-import { getAuth, sendSignInLinkToEmail, isSignInWithEmailLink } from 'firebase/auth';
+import { getAuth} from 'firebase/auth';
 
 // Updated the Config
 const firebaseConfig = {
