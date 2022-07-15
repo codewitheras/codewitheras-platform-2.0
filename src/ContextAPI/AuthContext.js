@@ -50,7 +50,6 @@ const AuthContextProvider = ({ children }) => {
   };
 
   // Send user a passwordless email and verification
-
   sendSignInLinkToEmail(auth, email, actionCodeSettings)
   .then(() => {
     // The link was successfully sent. Inform the user.
