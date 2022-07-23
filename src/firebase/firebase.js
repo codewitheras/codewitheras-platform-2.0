@@ -16,8 +16,6 @@ const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 
 
-
-
 // Confirm the link is a sign-in with email link.
 
 // Passwordless Sign In

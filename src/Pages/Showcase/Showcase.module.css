@@ -29,7 +29,7 @@
   font-size: 30px;
 }
 
-.showcase__outline > .add__showcase {
+.showcase__outline>.add__showcase {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -37,27 +37,23 @@
   padding: 0 30px;
 }
 
-.add__showcase > button {
+.add__showcase>button {
   padding: 10px 25px;
   font-size: 15px;
   border: 1px solid rgb(7, 103, 199);
   outline: 0;
   border-radius: 5px;
-  /* background-color: rgb(7, 103, 199); */
+  background-color: rgb(7, 103, 199);
   cursor: pointer;
-  color: rgb(7, 103, 199);
+  color: white;
   transition: 0.3s linear;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.add__showcase>button:hover {
-  background-color: rgb(7, 103, 199);
-  color: #fff;
-}
 
-.add__showcase>button > span {
+.add__showcase>button>span {
   font-size: 20px;
   margin-right: 10px;
 }
@@ -105,4 +101,9 @@
   color: black;
   font-size: 16px;
   border-radius: 5px;
+}
+.no__showcase {
+  text-align: center;
+  color: rgb(146, 146, 146);
+  font-size: 30px;
 }

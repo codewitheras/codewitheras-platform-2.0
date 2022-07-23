@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import styles from "./Signup.module.css";
 import { useAuth } from "./../../ContextAPI/AuthContext";
+import Toast from "../../Components/Toast/Toast";
 
 const Signuppage = () => {
   const [ischecked, setIschecked] = useState(false);
@@ -37,6 +38,7 @@ const Signuppage = () => {
     // checking if all inputs are filled...
     if (!firstname || !lastname || !email || !password || !confirmPassword) {
       alert("Please fill all credentials");
+      return <Toast info='Please fill all credentials' color='red' />;
     } else if (password !== confirmPassword) {
       alert("Passwords do not match...");
     } else if (!ischecked) {

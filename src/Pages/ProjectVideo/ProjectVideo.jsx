@@ -1,12 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
-import { Video } from "../../Components/Widgets/Video";
 import styles from "./ProjectVideo.module.css";
 import Footer from "./../../Components/Core/Footer/Footer";
 import { Link } from "react-router-dom";
+import VideoPlayer from "../../Components/VideoPlayer/VideoPlayer";
+import VideoPoster from "../../assets/imgs/firebase1.png";
+import TestVid from "../../Components/VideoPlayer/test_vid.mp4";
 
 const ProjectVideo = () => {
   const query = useParams();
@@ -19,7 +21,7 @@ const ProjectVideo = () => {
 
   return (
     <>
-      <Video videoUrl='' videoPosterImg='' />
+      <VideoPlayer videoSrc={TestVid} videoPosterImg={VideoPoster} />
       <div className={styles.project__details}>
         {/* Project Video Title */}
         <div className={styles.project__title}>

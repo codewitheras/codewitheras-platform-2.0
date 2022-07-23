@@ -85,6 +85,7 @@ const Footer = () => {
               Report an issue
             </a>
             <Link to='/donation'>Donate</Link>
+            <Link to='/contribute'>Contribute</Link>
           </div>
         </div>
         <div className={styles.footer__about_links}>

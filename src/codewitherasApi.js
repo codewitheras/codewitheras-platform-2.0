@@ -470,49 +470,49 @@ export const resources = [];
 
 // Database for student project submission
 export const projectsShowCase = [
-  {
-    id: 1,
-    student_name: "Erasmus Mensah",
-    showCaseImg: ImgURL,
-    title: "Real Estate",
-    desc: "A real estate project built using HTML, CSS and JAVASCRIPT",
-    deployed_link: "https://projectshowcase.netlify.app",
-    github_repo_link: 'https://github.com/user-repo-name'
-  },
-  {
-    id: 2,
-    student_name: "Daniel Brown",
-    showCaseImg: ImgURL,
-    title: "E-commerce Mobile App",
-    desc: "An E-commerce mobile app like Amazon",
-    deployed_link: "https://projectshowcase.netlify.app",
-    github_repo_link: 'https://github.com/user-repo-name'
-  },
-  {
-    id: 3,
-    student_name: "Angel Nyansafo",
-    showCaseImg: ImgURL,
-    title: "Dating App",
-    desc: "A tinderlike clone",
-    deployed_link: "https://projectshowcase.netlify.app",
-    github_repo_link: 'https://github.com/user-repo-name'
-  },
-  {
-    id: 4,
-    student_name: "Kakra Arthur",
-    showCaseImg: ImgURL,
-    title: "",
-    desc: "",
-    deployed_link: "https://projectshowcase.netlify.app",
-    github_repo_link: 'https://github.com/user-repo-name'
-  },
-  {
-    id: 5,
-    student_name: "Panyin Arthur",
-    showCaseImg: ImgURL,
-    title: "",
-    desc: "",
-    deployed_link: "https://projectshowcase.netlify.app",
-    github_repo_link: 'https://github.com/user-repo-name'
-  }
+  // {
+  //   id: 1,
+  //   student_name: "Erasmus Mensah",
+  //   showCaseImg: ImgURL,
+  //   title: "Real Estate",
+  //   desc: "A real estate project built using HTML, CSS and JAVASCRIPT",
+  //   deployed_link: "https://projectshowcase.netlify.app",
+  //   github_repo_link: 'https://github.com/user-repo-name'
+  // },
+  // {
+  //   id: 2,
+  //   student_name: "Daniel Brown",
+  //   showCaseImg: ImgURL,
+  //   title: "E-commerce Mobile App",
+  //   desc: "An E-commerce mobile app like Amazon",
+  //   deployed_link: "https://projectshowcase.netlify.app",
+  //   github_repo_link: 'https://github.com/user-repo-name'
+  // },
+  // {
+  //   id: 3,
+  //   student_name: "Angel Nyansafo",
+  //   showCaseImg: ImgURL,
+  //   title: "Dating App",
+  //   desc: "A tinderlike clone",
+  //   deployed_link: "https://projectshowcase.netlify.app",
+  //   github_repo_link: 'https://github.com/user-repo-name'
+  // },
+  // {
+  //   id: 4,
+  //   student_name: "Kakra Arthur",
+  //   showCaseImg: ImgURL,
+  //   title: "",
+  //   desc: "",
+  //   deployed_link: "https://projectshowcase.netlify.app",
+  //   github_repo_link: 'https://github.com/user-repo-name'
+  // },
+  // {
+  //   id: 5,
+  //   student_name: "Panyin Arthur",
+  //   showCaseImg: ImgURL,
+  //   title: "",
+  //   desc: "",
+  //   deployed_link: "https://projectshowcase.netlify.app",
+  //   github_repo_link: 'https://github.com/user-repo-name'
+  // }
 ];

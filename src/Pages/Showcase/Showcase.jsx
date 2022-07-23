@@ -11,7 +11,6 @@ import ShowcaseForm from "../../Components/ShowcaseForm/ShowcaseForm";
 const Showcase = () => {
   const [projectShowcase, setProjectShowcase] = useState(projectsShowCase);
   const [showModal, setShowModal] = useState(false);
-  const [previewImg, setPreviewImg] = useState('');
 
   useEffect(() => {
     setProjectShowcase(projectShowcase);
@@ -20,39 +19,30 @@ const Showcase = () => {
 
   const handleOpenShowcaseModal = () => {
     setShowModal(!showModal);
-  }
-
-  // * Post Showcase Project Function
-
-  const handleCreateShowcase = () => {
-    // Todo: Handle the project showcase functionality
-    // Todo: Preview the project showcase image before upload
-    // Todo: Collect all necessary data about showcase and user
-
-    // Todo: Refactor this functionality using 'async await'...
-
-    // * Save and push all these info into the Google Firebase Database...
-
   };
 
   return (
     <>
       <Banner
         title='Showcase Your Projects'
-        text='Share and find project to and from the student community.'
+        text='Share and find projects to and from the student community.'
       />
       <div className={styles.showcase}>
-        <p>Starter Packs</p>
+        {/* <p>Starter Packs</p> */}
         <div className={styles.showcase__outline}>
           <h3>Project Showcase</h3>
           <div className={styles.add__showcase}>
             <button type='button' onClick={handleOpenShowcaseModal}>
-              <span>+</span> Add Project
+              Submit your project
             </button>
           </div>
           <div className={styles.showcase__container}>
-            {projectShowcase
-              .map(
+            {projectShowcase.length < 1 ? (
+              <h1 className={styles.no__showcase}>
+                Sorry, there are no showcase projects 😒😒😢
+              </h1>
+            ) : (
+              projectShowcase.map(
                 ({
                   id,
                   title,
@@ -72,7 +62,7 @@ const Showcase = () => {
                   </div>
                 )
               )
-              .slice(0, 1)}
+            )}
           </div>
         </div>
       </div>

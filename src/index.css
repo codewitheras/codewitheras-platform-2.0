@@ -12,15 +12,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
-  user-select: none;
+  /* user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   -ms-touch-select: none;
+    */
 }
 
 body {
-  background-color: rgba(238, 238, 238, 0.479);
+  /* background-color: rgba(238, 238, 238, 0.479); */
 }
 
 code {
