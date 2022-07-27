@@ -6,11 +6,11 @@ import Toast from "../../Components/Toast/Toast";
 
 const Signuppage = () => {
   const [ischecked, setIschecked] = useState(false);
-  const [emailValid, setEmailValid] = useState(true);
-  const [passwordValid, setPasswordValid] = useState(true);
-  const [firstNameValid, setFirstNameValid] = useState(true);
-  const [lastNameValid, setLastNameValid] = useState(true);
-  const [confirmPasswordValid, setConfirmPasswordValid] = useState(true);
+  // const [emailValid, setEmailValid] = useState(true);
+  // const [passwordValid, setPasswordValid] = useState(true);
+  // const [firstNameValid, setFirstNameValid] = useState(true);
+  // const [lastNameValid, setLastNameValid] = useState(true);
+  // const [confirmPasswordValid, setConfirmPasswordValid] = useState(true);
   const [isFormValid, setIsFormValid] = useState(true);
 
   const firstNameRef = useRef();

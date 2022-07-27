@@ -6,7 +6,6 @@ const Challengepage = () => {
   return (
     <div className={styles.challenges}>
       {/* Challenge Logo */}
-
       {/* Challenge Banner
        * Banner background image of challenge...
        * Intro text
@@ -26,8 +25,14 @@ const Challengepage = () => {
        * Day 4 build
        * Day 5 giveaways {1st place, 2nd place, 3rd place}
        */}
-
-      <ChallengeBanner challengeTitle='Airbnb Clone' />
+      {/* const {(challengeTitle, bgImg, overlayColor, countDownTimer, date_time)} = */}
+      <ChallengeBanner
+        challengeTitle='Airbnb Clone'
+        bgImg=''
+        overlayColor=''
+        countDownTimer=''
+        date_time=''
+      />
     </div>
   );
 };
