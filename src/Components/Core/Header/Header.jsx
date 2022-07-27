@@ -36,12 +36,6 @@ const Header = () => {
           <nav className={styles.nav__links}>
             <div className={styles.nav__links_wrapper}>
               <NavLink
-                to='/about'
-                className={styles.nav__link}
-                activeStyle={activeStyle}>
-                About
-              </NavLink>
-              <NavLink
                 to='/projects'
                 className={styles.nav__link}
                 activeStyle={activeStyle}>
@@ -53,12 +47,12 @@ const Header = () => {
                 activeStyle={activeStyle}>
                 Templates
               </NavLink>
-              {/* <NavLink
-                to='/pricing'
+              <NavLink
+                to='/challenge'
                 className={styles.nav__link}
                 activeStyle={activeStyle}>
-                Pricing
-              </NavLink> */}
+                Challenges
+              </NavLink>
               <NavLink
                 to='/events'
                 className={styles.nav__link}

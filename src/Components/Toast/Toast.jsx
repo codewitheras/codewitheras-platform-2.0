@@ -1,14 +1,26 @@
-import React from 'react'
-import './Toast.css'
+import React from "react";
+// import styles from "./Toast.module.css";
 
-function Toast({info, color, isEmailSent}) {
+function Toast({ info, color, isEmailSent }) {
   return (
     <>
-      <div className={`${isEmailSent ? "toast" : ""}`} style={{ backgroundColor: color }}>
-        <p>{info}</p>
+      <div>
+        <div
+          // className={`${isEmailSent ? styles.toast : ""}`}
+          style={{
+            backgroundColor: color,
+            height: "35px",
+            textAlign: "center",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            transition: "all 0.5s ease-in-out",
+          }}>
+          <p>{info}</p>
+        </div>
       </div>
     </>
   );
 }
 
-export default Toast
+export default Toast;

@@ -56,22 +56,22 @@ const ProjectVideo = () => {
           <h3>Resources</h3>
           <ul>
             <li>
-              <a href='#'>Resource link</a>
+              <a href='#' target='_blank' >Resource link</a>
             </li>
             <li>
-              <a href='#'>Resource link</a>
+              <a href='#' target='_blank' >Resource link</a>
             </li>
             <li>
-              <a href='#'>Resource link</a>
+              <a href='#' target='_blank' >Resource link</a>
             </li>
             <li>
-              <a href='#'>Resource link</a>
+              <a href='#' target='_blank' >Resource link</a>
             </li>
             <li>
-              <a href='#'>Resource link</a>
+              <a href='#' target='_blank' >Resource link</a>
             </li>
             <li>
-              <a href='#'>Resource link</a>
+              <a href='#' target='_blank' >Resource link</a>
             </li>
           </ul>
         </div>

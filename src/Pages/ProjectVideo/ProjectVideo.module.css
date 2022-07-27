@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 20px 55px;
+  padding: 50px 55px;
 }
 
 .project__details>.project__title {
@@ -12,6 +12,9 @@
   justify-content: space-between;
 }
 
+.project__details>.project__title>h2 {
+  font-size: 26px;
+}
 .project__title>.views {
   padding: 7px 15px;
   background-color: rgba(194, 194, 194, 0.788);

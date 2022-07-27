@@ -6,13 +6,18 @@ const useVideoPlayer = videoElement => {
   const [speed, setSpeed] = useState(1);
   const [isMuted, setIsMuted] = useState(false);
 
+  const [isControlsHidden, setIsControlsHidden] = useState(false);
+
   // Toggle play & pause functionality
   const togglePlayPause = () => {
-    // isPlaying ? setIsPlaying(false) : setIsPlaying(true);
     if (isPlaying) {
       setIsPlaying(false);
+      setTimeout(() => {
+        setIsControlsHidden(true);
+      });
     } else {
       setIsPlaying(true);
+      setIsControlsHidden(false);
     }
   };
 
@@ -49,14 +54,17 @@ const useVideoPlayer = videoElement => {
   };
 
   // Toggle mute & unmute
-  const toggleMute = () => {
-    setIsMuted(!isMuted);
-  };
+  const toggleMute = () => setIsMuted(!isMuted);
 
   // Toggle Full Screen
-  const toggleFullScreen = () => {
+  const toggleFullScreen = () =>
     videoElement.current && videoElement.current.requestFullscreen();
-  };
+
+  // Video Duration
+  // const videoDuration = () => (videoElement.current.currentTime / videoElement.current.duration) * 100;
+
+  // Video Current Timestamp
+  // const currentTimeStamp = () => videoElement.current.duration * 100;
 
   useEffect(() => {
     isMuted
@@ -75,6 +83,7 @@ const useVideoPlayer = videoElement => {
     handleVideoProgress,
     handleVideoSpeed,
     toggleFullScreen,
+    isControlsHidden,
   };
 };
 

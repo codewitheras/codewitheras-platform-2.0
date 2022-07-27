@@ -6,6 +6,12 @@ import Toast from "../../Components/Toast/Toast";
 
 const Signuppage = () => {
   const [ischecked, setIschecked] = useState(false);
+  const [emailValid, setEmailValid] = useState(true);
+  const [passwordValid, setPasswordValid] = useState(true);
+  const [firstNameValid, setFirstNameValid] = useState(true);
+  const [lastNameValid, setLastNameValid] = useState(true);
+  const [confirmPasswordValid, setConfirmPasswordValid] = useState(true);
+  const [isFormValid, setIsFormValid] = useState(true);
 
   const firstNameRef = useRef();
   const lastNameRef = useRef();
@@ -37,8 +43,9 @@ const Signuppage = () => {
 
     // checking if all inputs are filled...
     if (!firstname || !lastname || !email || !password || !confirmPassword) {
-      alert("Please fill all credentials");
-      return <Toast info='Please fill all credentials' color='red' />;
+      setIsFormValid(false);
+      // alert("Please fill all credentials");
+      // return <Toast info='Please fill all credentials' color='red' />;
     } else if (password !== confirmPassword) {
       alert("Passwords do not match...");
     } else if (!ischecked) {
@@ -51,6 +58,7 @@ const Signuppage = () => {
   };
   return (
     <>
+      {!isFormValid && <Toast info='Please fill all credentials' color='red' />}
       <div className={styles.signup__page}>
         <div className={styles.signup__form}>
           <form onSubmit={handleSignup} ref={formRef}>

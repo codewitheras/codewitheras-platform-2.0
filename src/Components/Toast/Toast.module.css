@@ -1,0 +1,8 @@
+.toast__wrapper {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.toast__wrapper>.toast {
+  padding: 10px 0;
+}
