@@ -13,6 +13,7 @@ const ChallengeBanner = props => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
+        backgroundColor: overlayColor,
       }}>
       <h2>{challengeTitle}</h2>
       <p>Hosted by Codewitheras</p>
@@ -42,6 +43,7 @@ const ChallengeBanner = props => {
           <h3>4</h3>
           <p>seconds left</p>
         </div>
+        {countDownTimer}
       </div>
     </div>
   );
