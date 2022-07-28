@@ -11,7 +11,7 @@ const Signuppage = () => {
   const [firstNameValid, setFirstNameValid] = useState(true);
   const [lastNameValid, setLastNameValid] = useState(true);
   const [confirmPasswordValid, setConfirmPasswordValid] = useState(true);
-  const [isFormValid, setIsFormValid] = useState(true);
+  // const [isFormValid, setIsFormValid] = useState(true);
 
   const firstNameRef = useRef();
   const lastNameRef = useRef();
@@ -45,7 +45,7 @@ const Signuppage = () => {
 
     // checking if all inputs are filled...
     if (!firstname || !lastname || !email || !password || !confirmPassword) {
-      setIsFormValid(false);
+      // setIsFormValid(false);
     } else if (password < 8) {
       alert("Passwords is too short..");
     } else if (password !== confirmPassword) {
@@ -63,7 +63,7 @@ const Signuppage = () => {
 
           // Updating the user's displayName credentials with the firstname & lastname
           userCredentials.user.displayName = fullName;
-          setIsFormValid(true);
+          // setIsFormValid(true);
           setIschecked(true);
           setEmailValid(true);
           setFirstNameValid(true);
