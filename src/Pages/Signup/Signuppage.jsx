@@ -6,11 +6,11 @@ import Toast from "../../Components/Toast/Toast";
 
 const Signuppage = () => {
   const [ischecked, setIschecked] = useState(false);
-  // const [emailValid, setEmailValid] = useState(true);
-  // const [passwordValid, setPasswordValid] = useState(true);
-  // const [firstNameValid, setFirstNameValid] = useState(true);
-  // const [lastNameValid, setLastNameValid] = useState(true);
-  // const [confirmPasswordValid, setConfirmPasswordValid] = useState(true);
+  const [emailValid, setEmailValid] = useState(true);
+  const [passwordValid, setPasswordValid] = useState(true);
+  const [firstNameValid, setFirstNameValid] = useState(true);
+  const [lastNameValid, setLastNameValid] = useState(true);
+  const [confirmPasswordValid, setConfirmPasswordValid] = useState(true);
   const [isFormValid, setIsFormValid] = useState(true);
 
   const firstNameRef = useRef();
@@ -30,6 +30,8 @@ const Signuppage = () => {
     history.replace("/");
   }
 
+  const { register } = useAuth();
+
   const handleSignup = e => {
     e.preventDefault();
 
@@ -44,21 +46,50 @@ const Signuppage = () => {
     // checking if all inputs are filled...
     if (!firstname || !lastname || !email || !password || !confirmPassword) {
       setIsFormValid(false);
-      // alert("Please fill all credentials");
-      // return <Toast info='Please fill all credentials' color='red' />;
+    } else if (password < 8) {
+      alert("Passwords is too short..");
     } else if (password !== confirmPassword) {
       alert("Passwords do not match...");
+      setPasswordValid(false);
     } else if (!ischecked) {
-      alert("Please accept our Terms of Service");
+      // alert("Please accept our Terms of Service");
+      setIschecked(false);
+      // return <Toast info='Please accept our Terms of Service' color='red' />;
     } else {
+      register(email, password)
+        .then(userCredentials => {
+          console.log(userCredentials);
+          const fullName = `${firstname} ${lastname}`;
+
+          // Updating the user's displayName credentials with the firstname & lastname
+          userCredentials.user.displayName = fullName;
+          setIsFormValid(true);
+          setIschecked(true);
+          setEmailValid(true);
+          setFirstNameValid(true);
+          setLastNameValid(true);
+          setConfirmPasswordValid(true);
+          history.replace("/");
+
+          // setF
+        })
+        .catch(err => alert(err.message));
       alert("Registered");
-      formRef.current.reset();
-      history.replace("/");
     }
   };
   return (
     <>
-      {!isFormValid && <Toast info='Please fill all credentials' color='red' />}
+      {/* {!isFormValid && <Toast info='Please fill all credentials' color='red' />} */}
+      {!emailValid && <Toast info='Invalid email' color='red' />}
+      {!passwordValid && (
+        <Toast info='Please input your password' color='red' />
+      )}
+      {!firstNameValid && <Toast info='Please enter firstname' color='red' />}
+      {!lastNameValid && <Toast info='Please enter lastname' color='red' />}
+      {!confirmPasswordValid && (
+        <Toast info='Passwords do not match' color='red' />
+      )}
+      {/* {!isFormValid && <Toast info='Please fill all credentials' color='red' />} */}
       <div className={styles.signup__page}>
         <div className={styles.signup__form}>
           <form onSubmit={handleSignup} ref={formRef}>
@@ -106,6 +137,8 @@ const Signuppage = () => {
                   placeholder='Password'
                   required
                   ref={passwordRef}
+                  min='8'
+                  max='12'
                 />
               </div>
               <div className={styles.form__control}>
@@ -116,6 +149,8 @@ const Signuppage = () => {
                   placeholder='Confirm Password'
                   required
                   ref={confirmPasswordRef}
+                  min='8'
+                  max='12'
                 />
               </div>
             </div>

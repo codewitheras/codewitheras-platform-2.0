@@ -19,7 +19,7 @@ import ProjectVideo from "./Pages/ProjectVideo/ProjectVideo";
 import Showcase from "./Pages/Showcase/Showcase";
 import RequestTemplate from "./Pages/Request/RequestTemplate";
 import TemplateDetails from "./Pages/TemplateDetails/TemplateDetails";
-// import ProtectedPage from "./Components/ProtectedPage/ProtectedPage";
+import ProtectedPage from "./Components/ProtectedPage/ProtectedPage";
 import PageNotFound from "./Pages/404Page/PageNotFound";
 import Contribute from "./Pages/Contribute/Contribute";
 import JoinCommunity from "./Pages/JoinCommunity/JoinCommunity";
@@ -36,17 +36,17 @@ const AppRouter = () => {
           <Route path='/contribute' component={Contribute} />
           <Route path='/events' component={Eventspage} />
           <Route path='/projects' component={Projectspage} />
-          <Route path='/project/video/:id' component={ProjectVideo} />
+          <ProtectedPage path='/project/video/:id' component={ProjectVideo} />
           <Route path='/templates' component={Templatespage} />
           {/* <Route path='/pricing' component={Pricingpage} /> */}
           <Route path='/donation' component={Donationpage} />
-          <Route path='/join-community' component={JoinCommunity} />
+          <ProtectedPage path='/join-community' component={JoinCommunity} />
           <Route path='/challenge' component={Challengepage} />
           <Route path='/mentorship' component={Mentorpage} />
-          <Route path='/showcase' component={Showcase} />
-          <Route path='/request-template' component={RequestTemplate} />
+          <ProtectedPage path='/showcase' component={Showcase} />
+          <ProtectedPage path='/request-template' component={RequestTemplate} />
           <Route path='/register' component={Signuppage} />
-          <Route path='/template/:id' component={TemplateDetails} />
+          <ProtectedPage path='/template/:id' component={TemplateDetails} />
           <Route path='/signin' component={Signinpage} />
           <Route path='*' component={PageNotFound} />
         </Switch>
