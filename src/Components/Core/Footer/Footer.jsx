@@ -33,13 +33,13 @@ const Footer = () => {
               Discord
             </a>
             <a
-              href='http://t.me/gg.hT45'
+              href='https://t.me/+DQKeiKbhUEdhMWM8'
               target='_blank'
               rel='noopener noreferrer'>
               Telegram
             </a>
             <a
-              href='http://discord.com/gg.hT45'
+              href='http://chat.whatsapp.com/D7S35Fod0DUJWHZhEFs3M9'
               target='_blank'
               rel='noopener noreferrer'>
               WhatsApp
@@ -79,7 +79,7 @@ const Footer = () => {
           <h4>Contribute</h4>
           <div className={styles.footer__links}>
             <a
-              href='http://github.com/codewitheras'
+              href='https://github.com/codewitheras/codewitheras-platform-2.0/issues'
               target='_blank'
               rel='noopener noreferrer'>
               Report an issue

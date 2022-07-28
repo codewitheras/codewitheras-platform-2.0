@@ -5,6 +5,9 @@
   position: relative;
 }
 
+.video__player:hover .video__progress {
+  display: flex;
+}
 .video__player>video {
   height: 100%;
   width: 100%;
@@ -33,6 +36,7 @@
   transition: transform 0.25s linear;
 }
 
+/* .controls__hidden {} */
 .video__player_controls>button:hover {
   transform: scale(1.05);
 }
@@ -79,5 +83,12 @@
   font-size: 16px;
   border: 0;
   outline: 0;
+  cursor: pointer;
+}
+
+.play__pause_btn {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
   cursor: pointer;
 }

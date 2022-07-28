@@ -4,6 +4,8 @@ import { useRef, useState } from "react";
 import useVideoPlayer from "../../Hooks/useVideoPlayer";
 import styles from "./VideoPlayer.module.css";
 
+import { BsFullscreen, BsPause, BsPlay } from "react-icons/bs";
+
 const VideoPlayer = ({ videoSrc, videoPosterImg }) => {
   const videoElement = useRef(null);
   const [isPlayButtonVisible, setIsPlayButtonVisible] = useState(false);
@@ -43,12 +45,12 @@ const VideoPlayer = ({ videoSrc, videoPosterImg }) => {
         </div> */}
         <div className={styles.video__progress}>
           {isControlsHidden && (
-            <div className={`${isControlsHidden} ? ${styles.controls}`}>
+            <div className={styles.controls}>
               <button
                 type='button'
                 className={styles.play__pause_btn}
                 onClick={togglePlayPause}>
-                {!isPlaying ? "Play" : "Pause"}
+                {!isPlaying ? <BsPlay /> : <BsPause />}
               </button>
               <input
                 type='range'
@@ -60,7 +62,7 @@ const VideoPlayer = ({ videoSrc, videoPosterImg }) => {
                 onChange={e => handleVideoProgress(e)}
               />
               <button type='button' onClick={toggleFullScreen}>
-                [fullscreen]
+                <BsFullscreen />
               </button>
             </div>
           )}

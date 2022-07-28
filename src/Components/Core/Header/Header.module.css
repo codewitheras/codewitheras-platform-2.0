@@ -113,9 +113,13 @@
 .auth>.logout {
   background-color: dodgerblue;
   padding: 9px 25px;
-  border-radius: 3px;
+  border-radius: 5px;
   color: white;
   transition: all .3s linear;
+  border: 0;
+    outline: 0;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 .auth>.logout:hover {
