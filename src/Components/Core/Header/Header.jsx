@@ -11,6 +11,7 @@ const Header = () => {
 
   const activeStyle = {
     color: "dodgerblue",
+    fontWeight: "600",
   };
 
   const logoutHandler = async e => {

@@ -11,7 +11,7 @@ import FilterButtons from "../../Components/FilterButton/FilterButton";
 const Projectspage = () => {
   // Projects variable
   const [projects, setProjects] = useState(projectData);
-  const [filteredProjects, setFilteredProjects] = useState("");
+  // const [filteredProjects, setFilteredProjects] = useState("");
 
   useEffect(() => {
     setProjects(projectData);
@@ -35,11 +35,7 @@ const Projectspage = () => {
             </div>
             <div className={styles.search__projects}>
               <form>
-                <input
-                  type='text'
-                  placeholder='Search projects'
-                  required
-                />
+                <input type='text' placeholder='Search projects' required />
               </form>
             </div>
           </div>

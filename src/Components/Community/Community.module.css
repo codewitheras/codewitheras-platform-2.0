@@ -13,7 +13,8 @@
 
 .community>p {
   font-size: 16px;
-  color: whitesmoke;
+  /* color: whitesmoke; */
+    color: black;
 }
 
 .community .join__community {
@@ -28,12 +29,14 @@
 
 .join__community>h2 {
   font-size: 30px;
-  color: whitesmoke;
+  /* color: whitesmoke; */
+    color: black;
 }
 
 .join__community>p {
-  color: whitesmoke;
-  font-size: 16px;
+  /* color: whitesmoke; */
+    color: black;
+    font-size: 18px;
   width: 650px;
   text-align: center;
 }
@@ -48,7 +51,8 @@
 }
 
 .community__outlines>a {
-  color: white;
+  /* color: white; */
+    color: black;
   font-size: 16px;
 }
 

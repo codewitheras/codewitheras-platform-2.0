@@ -1,0 +1,153 @@
+.demo__img_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 70px 0;
+}
+
+.demo__img_wrapper a {
+  font-size: 16px;
+  color: white;
+  padding: 9px 19px;
+  border-radius: 5px;
+  background: #160707;
+}
+
+.demo__img {
+  height: 500px;
+  max-width: 800px;
+  border: 2px solid rgb(207, 207, 207);
+  box-shadow: 0px 5px 10px rgba(167, 164, 164, 0.61);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.demo__img img {
+  height: 100%;
+  width: 100%;
+}
+
+/* TUTOR */
+.tutor,
+.tutor__details {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.tutor__details {
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.intro {
+  margin: 10px 0;
+}
+
+.intro h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tutor__img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: dodgerblue;
+  box-shadow: 0px 5px 10px rgba(167, 164, 164, 0.61);
+}
+
+.tutor__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tutor__details {
+  width: 100%;
+}
+
+.tutor__details .title {
+  font-size: 26px;
+}
+
+.tutor__details .txt {
+  font-size: 18px;
+  color: black;
+}
+
+.txt span {
+  color: #df0000;
+  font-weight: 600;
+}
+
+/* CHALLENGE OUTLINE */
+.challenge__outline {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+/* CHALLENGE CARD */
+.challenge__card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  padding: 50px 100px;
+  height: 350px;
+}
+
+
+/* CHALLENGE DETAILS */
+.challenge__txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.challenge__txt h3 {
+  font-size: 26px;
+  color: #ad1313b0;
+}
+
+.challenge__txt p {
+  max-width: 400px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+
+/* CHALLENGE IMAGE */
+.challenge__img {
+  height: 100%;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.challenge__img img {
+  height: 100%;
+  width: 100%;
+}
+
+.challenge__card_odd {
+  background-color: rgba(206, 206, 206, 0.705);
+}

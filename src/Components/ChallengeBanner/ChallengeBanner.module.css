@@ -1,0 +1,136 @@
+.challenge__banner::before {
+  top: 0;
+  left: 0;
+  content: '';
+  height: 100%;
+  width: 100%;
+  /* background: rgba(0, 0, 0, 0.5); */
+  background: rgba(161, 22, 22, 0.658);
+  /* background: #a21616a8; */
+  position: absolute;
+  z-index: -1;
+}
+
+.challenge__banner {
+  width: 100%;
+  height: calc(100vh - 60px);
+  /* background: #808080; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.challenge__title {
+  font-size: 50px;
+  max-width: 700px;
+  text-align: center;
+  color: white;
+}
+
+.challenge__host {
+  font-size: 16px;
+  font-weight: 500;
+  color: whitesmoke;
+}
+
+.challenge__exp_level {
+  font-size: 15px;
+  color: dodgerblue;
+}
+
+.type {
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.price>span {
+  color: dodgerblue;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.date_and_time {
+  font-size: 20px;
+  font-weight: 600;
+  color: whitesmoke;
+}
+
+/* COUNTDOWN TIMER */
+.countdown__timer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.171);
+}
+
+.dot {
+  font-size: 60px;
+  color: white;
+}
+
+.days h3,
+.hours h3,
+.minutes h3,
+.seconds h3 {
+  font-size: 34px;
+  /* color: dodgerblue; */
+  color: rgba(161, 22, 22, 0.658);
+}
+
+.days p,
+.hours p,
+.minutes p,
+.seconds p {
+  font-size: 16px;
+  /* color: dodgerblue; */
+  /* color: dodgerblue; */
+  color: rgba(161, 22, 22, 0.658);
+  text-transform: capitalize;
+}
+
+.reserve__button {
+  width: 100%;
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reserve__button button {
+  background-color: dodgerblue;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  padding: 15px 35px;
+  text-transform: capitalize;
+  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.3);
+}

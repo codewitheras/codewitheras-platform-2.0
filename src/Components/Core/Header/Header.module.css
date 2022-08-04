@@ -94,7 +94,7 @@
   color: inherit;
 }
 
-.auth__link:nth-child(1) {
+.auth__link:nth-child(2) {
   background-color: dodgerblue;
   padding: 9px 25px;
   border-radius: 3px;
@@ -102,7 +102,7 @@
   transition: all .3s linear;
 }
 
-.auth__link:nth-child(1):hover {
+.auth__link:nth-child(2):hover {
   background-color: rgb(9, 119, 228);
 }
 
