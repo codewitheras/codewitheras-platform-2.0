@@ -124,6 +124,7 @@ const Challengepage = () => {
             img={DemoImg}
             desc='Build the homepage of Airbnb clone using React and React Icons'
             title='Day 03: Authentication page'
+            odd='true'
           />
           <ChallengeCard
             img={DemoImg}
@@ -134,6 +135,7 @@ const Challengepage = () => {
             img={DemoImg}
             desc='Build the homepage of Airbnb clone using React and React Icons'
             title='Day 05: Building Booking page'
+            odd='true'
           />
         </section>
       </div>
@@ -143,9 +145,9 @@ const Challengepage = () => {
   );
 };
 
-export const ChallengeCard = ({ img, title, desc }) => {
+export const ChallengeCard = ({ img, title, desc, odd }) => {
   return (
-    <div className={styles.challenge__card}>
+    <div className={odd ? styles.challenge__card_odd : styles.challenge__card}>
       <div className={styles.challenge__txt}>
         <h3>{title}</h3>
         <p>{desc}</p>

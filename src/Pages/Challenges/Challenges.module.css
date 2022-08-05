@@ -149,5 +149,12 @@
 }
 
 .challenge__card_odd {
-  background-color: rgba(206, 206, 206, 0.705);
+  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    padding: 50px 100px;
+    height: 350px;
+    background-color: rgba(235, 235, 235, 0.541);
 }
