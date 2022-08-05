@@ -20,7 +20,7 @@ const Challengepage = () => {
     interval = setInterval(() => {
       const today = new Date().getTime();
 
-      // distance from Future (May 28, 2023) to Today
+      // distance from Future (August 10, 2022) to Today
       const distance = countDownDate - today;
 
       // Days, Hours, Minutes, Seconds...
