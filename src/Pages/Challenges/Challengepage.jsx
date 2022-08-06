@@ -111,29 +111,29 @@ const Challengepage = () => {
         <section className={styles.challenge__outline}>
           <ChallengeCard
             img={DemoImg}
-            desc='Build the homepage of Airbnb clone using React and React Icons'
-            title='Day 01: Building Portfolio'
+            desc='Build your customized portfolio to showcase your projects for job opportunities.'
+            title='Day 01: Building Custom Portfolio'
             odd='true'
           />
           <ChallengeCard
             img={DemoImg}
-            desc='Build the homepage of Airbnb clone using React and React Icons'
+            desc='Build the homepage of Airbnb listing all services it provides.'
             title='Day 02: Building Landing page'
           />
           <ChallengeCard
             img={DemoImg}
-            desc='Build the homepage of Airbnb clone using React and React Icons'
+            desc='Build the Sign In and Sign Out Authentication page with all neccessary functionality.'
             title='Day 03: Authentication page'
             odd='true'
           />
           <ChallengeCard
             img={DemoImg}
-            desc='Build the homepage of Airbnb clone using React and React Icons'
+            desc='Build the search home page and functionality to search, filter and find homes.'
             title='Day 04: Building Search page'
           />
           <ChallengeCard
             img={DemoImg}
-            desc='Build the homepage of Airbnb clone using React and React Icons'
+            desc='Build the individual homepage for each home and implement the boooking feature.'
             title='Day 05: Building Booking page'
             odd='true'
           />
